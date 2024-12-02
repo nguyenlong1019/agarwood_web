@@ -31,13 +31,13 @@ DEBUG = True
 # ALLOWED_HOSTS = [] 
 
 
-ALLOWED_HOSTS = ['127.0.0.1', 'agarwoodweb-production.up.railway.app']
+ALLOWED_HOSTS = ['127.0.0.1', 'agarwoodweb-production.up.railway.app', 'vanlongtinhhoa.com']
 
 CSRF_COOKIE_SECURE = True 
 SESSION_COOKIE_SECURE = True
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
-CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1', 'https://agarwoodweb-production.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1', 'https://agarwoodweb-production.up.railway.app', 'https://vanlongtinhhoa.com']
 
 
 # Application definition
