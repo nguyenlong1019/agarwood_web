@@ -1,0 +1,1 @@
+web: gunicorn agarwood_web.wsgi
