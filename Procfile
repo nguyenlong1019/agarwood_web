@@ -1,1 +1,1 @@
-web: gunicorn agarwood_web.wsgi
+web: gunicorn agarwood_server.wsgi
