@@ -23,7 +23,7 @@ class Order(CommonAbstract):
     transaction_id = models.UUIDField(default=uuid.uuid4, verbose_name='Mã giao dịch')
     order_code = models.CharField(max_length=20, unique=True, null=True, blank=True, verbose_name='Mã đơn hàng', editable=False) 
     status = models.SmallIntegerField(default=0, choices=ORDER_STATUS_CHOICES, verbose_name='Trạng thái đơn hàng') 
-    total_price = models.IntegerField(decimal_places=2, max_digits=18, verbose_name='Tổng tiền đơn hàng') 
+    total_price = models.IntegerField(default=0, verbose_name='Tổng tiền đơn hàng') 
     name = models.CharField(max_length=255, verbose_name='Họ tên khách hàng')
     address = models.TextField(verbose_name='Địa chỉ giao hàng')
     phone = models.CharField(max_length=15, verbose_name='Số điện thoại')
